@@ -38,7 +38,7 @@ namespace Employees.Api.Test.Services
                 Name = "Marcos",
                 Age = 68
             };
-            var dbContext = await DbContexFake.GetDatabaseContext();
+            var dbContext = await DbContextFake.GetDatabaseContext();
             var employeeService = new EmployeeServices(dbContext, mockMapper);
 
             //Act
@@ -53,8 +53,7 @@ namespace Employees.Api.Test.Services
         public async Task When_GetEmployees_ShouldReturnEmployeesList()
         {
             //Arrange
-            employees = await EmployeeData.GetEmployees();
-            var dbContext = await DbContexFake.GetDatabaseContext();
+            var dbContext = await DbContextFake.GetDatabaseContext();
             var employeeService = new EmployeeServices(dbContext, mockMapper);
 
             //Act

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Employees.Api.Test.Mocks.Context
 {
-    public static class DbContexFake
+    public static class DbContextFake
     {
         public static async Task<EmployeeContext> GetDatabaseContext()
         {

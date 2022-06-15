@@ -32,6 +32,7 @@ namespace Employees.Api.Test.Controllers
 
             //Assert
             (response as ObjectResult)?.StatusCode.Should().Be(StatusCodes.Status200OK);
+            employeeServices.Verify(m => m.GetEmployees());
         }
 
         [Fact]
@@ -46,6 +47,7 @@ namespace Employees.Api.Test.Controllers
 
             //Assert
             (response as ObjectResult)?.StatusCode.Should().Be(StatusCodes.Status404NotFound);
+            employeeServices.Verify(m => m.GetEmployees());
         }
 
         [Fact]
@@ -60,6 +62,7 @@ namespace Employees.Api.Test.Controllers
             
             //Assert
             (response as ObjectResult)?.StatusCode.Should().Be(StatusCodes.Status200OK);
+            employeeServices.Verify(m => m.AddEmployee(It.IsAny<EmployeeDto>()));
         }
     }
 }
