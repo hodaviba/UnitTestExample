@@ -7,7 +7,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Employees.Api", "Employees.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Employees.Api.Test", "Employees.Api.Test\Employees.Api.Test.csproj", "{AE10CA87-657C-4ADD-831C-0F2F1A9B3AE1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Employees.Front", "Employees.Front\Employees.Front.csproj", "{66FF4297-5A5E-42FD-BEA4-0354134274D7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Employees.Front", "Employees.Front\Employees.Front.csproj", "{66FF4297-5A5E-42FD-BEA4-0354134274D7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3E150723-0EF3-42A2-94FA-94FA65782B8A}"
+	ProjectSection(SolutionItems) = preProject
+		git-version.yml = git-version.yml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
